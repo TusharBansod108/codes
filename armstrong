@@ -1,0 +1,14 @@
+bool checkArmstrong(int n){
+	int sum=0,k,t;
+	t=n;
+	while(n>0){
+		k=n%10;
+		sum=sum+k*k*k;
+		n=n/10;
+	}
+	if(t==sum){
+		return true;
+	}else{
+		return false;
+	}
+}
